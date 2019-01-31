@@ -1,0 +1,20 @@
+Django Commands
+=========================================================
+django-admin startproject [Name]
+python manage.py startapp [Name]
+python manage.py runserver
+python manage.py sqlmigrate flights 0001
+python manage.py shell
+python manage.py createsuperuser
+
+cd ~/myproject
+python manage.py makemigrations
+python manage.py migrate
+
+Postgresql Commands
+=========================================================
+sudo -u postgres psql
+sudo su dimash
+postgres=# create database [mydb];
+postgres=# create user [myuser] with encrypted password '[pass]';
+postgres=# grant all privileges on database [mydb] to [myuser];
