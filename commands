@@ -11,6 +11,7 @@ cd ~/myproject
 python manage.py makemigrations
 python manage.py migrate
 
+=========================================================
 Postgresql Commands
 =========================================================
 sudo -u postgres psql
@@ -18,3 +19,9 @@ sudo su dimash
 postgres=# create database [mydb];
 postgres=# create user [myuser] with encrypted password '[pass]';
 postgres=# grant all privileges on database [mydb] to [myuser];
+
+=========================================================
+Testing Commands
+=========================================================
+coverage run --source='.' manage.py test mysite
+coverage report
